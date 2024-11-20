@@ -166,6 +166,75 @@ print(perimeter(5, 6, 7))       # 18
 print(perimeter(3, 2.4, 4))     # 9.4
 print(perimeter(1.7, 5.2, 3.8)) # 10.7
 ```
+## **Тестирование**
+В проект добавлена папка `tests` с файлами unit-тестов продукта.
+### **Файл _rectangle_test.py_**
+`RectangleTestCase`
+
+Включает 6 тестов для модуля `rectangle`:
+- тестирование функции `area`:
+    - `test_zero_mul` : нулевые значения параметров фигуры
+    - `test_square_mul` : прямоугольник с равными сторонами
+    - `test_diff_mul` : прямоугольник с разными сторонами
+- тестирование функции `perimeter`:
+    - `test_zero_sum` : нулевые значения параметров фигуры
+    - `test_square_sum` : прямоугольник с равными сторонами
+    - `test_diff_sum` : прямоугольник с разными сторонами
+
+**Результаты тестов:**
+
+![tableheaders](../images/tableheaders.png)
+![rectangletestcase](../images/rectangletest.png)
+### **Файл _square_test.py_**
+`SquareTestCase`
+
+Включает 4 теста для модуля `square`:
+- тестирование функции `area`:
+    - `test_zero_mul` : нулевые значения параметров фигуры
+    - `test_mul` : ненулевая сторона
+- тестирование функции `perimeter`:
+    - `test_zero_sum` : нулевые значения параметров фигуры
+    - `test_sum` : ненулевая сторона
+
+**Результаты тестов:**
+
+![tableheaders](../images/tableheaders.png)
+![squaretestcase](../images/squaretest.png)
+### **Файл _circle_test.py_**
+`CircleTestCase`
+
+Включает 4 теста для модуля `circle`:
+- тестирование функции `area`:
+    - `test_zero_mul` : нулевые значения параметров фигуры
+    - `test_mul` : ненулевой радиус
+- тестирование функции `perimeter`:
+    - `test_zero_sum` : нулевые значения параметров фигуры
+    - `test_sum` : ненулевой радиус
+
+**Результаты тестов:**
+
+![tableheaders](../images/tableheaders.png)
+![circletestcase](../images/circletest.png)
+### **Файл _triangle_test.py_**
+`TriangleTestCase`
+
+Включает 9 тестов для модуля `triangle`:
+- тестирование функции `area`:
+    - `test_zero_mul` : нулевые значения параметров фигуры
+    - `test_equal_mul` : треугольник с высотой, равной основанию
+    - `test_diff_mul` : треугольник с различными высотой и основанием
+- тестирование функции `perimeter`:
+    - `test_zero_sum` : нулевые значения параметров фигуры
+    - `test_triple_equal_sum` : равносторонний треугольник
+    - `test_double_equal_sum` : равнобедренный треугольник
+    - `test_double_equal_existence` : несуществующий равнобедренный треугольник
+    - `test_diff_sum` : разносторонний треугольник
+    - `test_diff_existence` : несуществующий разносторонний треугольник
+
+**Результаты тестов:**
+
+![tableheaders](../images/tableheaders.png)
+![triangletestcase](../images/triangletest.png)
 ## **История изменения проекта с хэшами коммитов**
 
 - `8ba9aeb3cea847b63a91ac378a2a6db758682460` L-03: Circle and square added
@@ -178,3 +247,12 @@ print(perimeter(1.7, 5.2, 3.8)) # 10.7
 - `409c027e27f28c61fb3cc77712d493c6aaa4389e` comments on functions in triangle.py added
 - `ca696325bf3e7da45e5a472852cf5895e9d405dc` minor cosmetic changes on rectangle.py and triangle.py
 - `0beff003d049cd59c6a45e07de318c9566711425 (HEAD -> new_features_465546)` documentation added in readme file
+- `9d946af9622d22d556abab3ba3271d66fca784a1 (origin/new_features_465546)` history of commits added to documentation
+- `f4d472154f71ca5de9c701133eac40b08ec960fe` new test file on rectangle added
+- `a2f09b71b95ad38b0df4f582488d29e49cb1b5d6` new test file on square added
+- `af2413edd87d3a24d1e1db2887bc928addd5952d` new test file on circle added
+- `56f26be13976cb315213ea3e37e4c606748f23aa` new test file on triangle added
+- `8fce1a2681f46b443d5d240b9db407f776d46892` checking of invalid figures added
+- `ec8005e23ca46c0435bf42687d5ad44562657829` all tests on invalid figures changed
+- `c5c90eb213638da0eea85877ec48f8cef74e516c` information on tests added into readme
+- `91ce5245de6f731709caf643cae2ce655375f528 (HEAD -> new_features_465546)` tests description added into readme
